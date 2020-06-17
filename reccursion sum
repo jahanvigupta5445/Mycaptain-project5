@@ -1,0 +1,20 @@
+#include<stdio.h>
+int rec(int x)
+{
+int p,q,r,s,y;
+p=x/1000;
+q=x/100%10;
+r=x/10%10;
+s=x%10;
+y=p+q+r+s;
+return(y);
+}
+int main()
+{
+int a, sum;
+printf("enter any number");
+scanf("%d",&a);
+sum=rec(a);
+printf("the sum of digits is : %d",sum);
+return 0;
+}
